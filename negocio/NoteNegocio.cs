@@ -68,6 +68,81 @@ namespace negocio
                 datos.cerrarConexion();
             }
         }
+
+        public Note obtenerPorId(int id)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearConsulta("SELECT Id, UsuarioId, TagId, Titulo, Contenido FROM Notas WHERE Id = @Id");
+                datos.setearParametro("@Id", id.ToString());
+                datos.ejecutarLectura();
+
+                if (datos.Lector.Read())
+                {
+                    Note nota = new Note();
+                    nota.Id = (int)datos.Lector["Id"];
+                    nota.UserId = (int)datos.Lector["UsuarioId"];
+                    nota.TagId = (int)datos.Lector["TagId"];
+                    nota.Titulo = datos.Lector["Titulo"] is DBNull ? "" : (string)datos.Lector["Titulo"];
+                    nota.Contenido = (string)datos.Lector["Contenido"];
+                    return nota;
+                }
+
+                return null;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
+        public void actualizar(Note nota)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("UPDATE Notas SET TagId = @TagId, Titulo = @Titulo, Contenido = @Contenido WHERE Id = @Id");
+                datos.setearParametro("@TagId", nota.TagId.ToString());
+                datos.setearParametro("@Titulo", nota.Titulo);
+                datos.setearParametro("@Contenido", nota.Contenido);
+                datos.setearParametro("@Id", nota.Id.ToString());
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
+        public void eliminar(int id)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("DELETE FROM Notas WHERE Id = @Id");
+                datos.setearParametro("@Id", id.ToString());
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
     }
 }
 

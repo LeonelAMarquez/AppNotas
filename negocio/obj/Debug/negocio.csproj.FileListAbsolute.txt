@@ -9,3 +9,14 @@ C:\Users\Leonel\Documents\Programacion\Marquez-891a0d\negocio\obj\Debug\negocio.
 C:\Users\Leonel\Documents\Programacion\Marquez-891a0d\negocio\obj\Debug\negocio.csproj.Up2Date
 C:\Users\Leonel\Documents\Programacion\Marquez-891a0d\negocio\obj\Debug\negocio.dll
 C:\Users\Leonel\Documents\Programacion\Marquez-891a0d\negocio\obj\Debug\negocio.pdb
+C:\Users\Leonel\OneDrive\Documentos\Programacion\AppNotas\negocio\bin\Debug\negocio.dll
+C:\Users\Leonel\OneDrive\Documentos\Programacion\AppNotas\negocio\bin\Debug\negocio.pdb
+C:\Users\Leonel\OneDrive\Documentos\Programacion\AppNotas\negocio\bin\Debug\conexionBD.dll
+C:\Users\Leonel\OneDrive\Documentos\Programacion\AppNotas\negocio\bin\Debug\dominio.dll
+C:\Users\Leonel\OneDrive\Documentos\Programacion\AppNotas\negocio\bin\Debug\conexionBD.pdb
+C:\Users\Leonel\OneDrive\Documentos\Programacion\AppNotas\negocio\bin\Debug\dominio.pdb
+C:\Users\Leonel\OneDrive\Documentos\Programacion\AppNotas\negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+C:\Users\Leonel\OneDrive\Documentos\Programacion\AppNotas\negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
+C:\Users\Leonel\OneDrive\Documentos\Programacion\AppNotas\negocio\obj\Debug\negocio.csproj.Up2Date
+C:\Users\Leonel\OneDrive\Documentos\Programacion\AppNotas\negocio\obj\Debug\negocio.dll
+C:\Users\Leonel\OneDrive\Documentos\Programacion\AppNotas\negocio\obj\Debug\negocio.pdb

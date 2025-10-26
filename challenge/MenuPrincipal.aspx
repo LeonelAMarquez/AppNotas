@@ -25,11 +25,25 @@
 
         <asp:GridView ID="dgvNotes" runat="server" CssClass="table table-bordered table-hover text-center" AutoGenerateColumns="False">
             <Columns>
-               
+                <asp:TemplateField HeaderText="Check">
+                    <ItemTemplate>
+                        <asp:CheckBox ID="chkSelect" runat="server" />
+                        <asp:HiddenField ID="hdnId" runat="server" Value='<%# Eval("Id") %>' />
+                    </ItemTemplate>
+                </asp:TemplateField>
+        
                 <asp:BoundField DataField="Contenido" HeaderText="Content" />
                 <asp:BoundField DataField="TagNombre" HeaderText="Tag" />
             </Columns>
         </asp:GridView>
+
+
+        <div class="text-center mt-3">
+            <asp:Button ID="btnDelete" runat="server" Text="Delete" CssClass="btn btn-danger me-2" OnClick="btnDelete_Click" />
+            <asp:Button ID="btnEdit" runat="server" Text="Edit" CssClass="btn btn-success" OnClick="btnEdit_Click" />
+            <a href="Default.aspx" class="btn btn-info me-2">Exit</a>
+        </div>
+
     </div>
 </asp:Content>
 

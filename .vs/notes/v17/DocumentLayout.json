@@ -1,12 +1,38 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Leonel\\OneDrive\\Documentos\\Programacion\\AppNotas\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|challenge\\challenge.vbproj|c:\\users\\leonel\\onedrive\\documentos\\programacion\\appnotas\\challenge\\menuprincipal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|challenge\\challenge.vbproj|solutionrelative:challenge\\menuprincipal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedHeight": 280,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MenuPrincipal.aspx",
+              "DocumentMoniker": "C:\\Users\\Leonel\\OneDrive\\Documentos\\Programacion\\AppNotas\\challenge\\MenuPrincipal.aspx",
+              "RelativeDocumentMoniker": "challenge\\MenuPrincipal.aspx",
+              "ToolTip": "C:\\Users\\Leonel\\OneDrive\\Documentos\\Programacion\\AppNotas\\challenge\\MenuPrincipal.aspx",
+              "RelativeToolTip": "challenge\\MenuPrincipal.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-10-26T18:48:50.735Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,4 +1,6 @@
 ﻿Imports negocio
+Imports dominio
+Imports System.Web.UI.WebControls
 
 Public Class MenuPrincipal
     Inherits System.Web.UI.Page
@@ -27,4 +29,31 @@ Public Class MenuPrincipal
         Dim tagId As Integer = Convert.ToInt32(btn.CommandArgument)
         CargarNotas(tagId)
     End Sub
+
+    Protected Sub btnDelete_Click(sender As Object, e As EventArgs)
+        For Each row As GridViewRow In dgvNotes.Rows
+            Dim chk As CheckBox = CType(row.FindControl("chkSelect"), CheckBox)
+            Dim hdnId As HiddenField = CType(row.FindControl("hdnId"), HiddenField)
+
+            If chk IsNot Nothing AndAlso chk.Checked Then
+                Dim id As Integer = Convert.ToInt32(hdnId.Value)
+                negocioNotas.eliminar(id)
+            End If
+        Next
+
+        CargarNotas()
+    End Sub
+
+    Protected Sub btnEdit_Click(sender As Object, e As EventArgs)
+        For Each row As GridViewRow In dgvNotes.Rows
+            Dim chk As CheckBox = CType(row.FindControl("chkSelect"), CheckBox)
+            Dim hdnId As HiddenField = CType(row.FindControl("hdnId"), HiddenField)
+
+            If chk IsNot Nothing AndAlso chk.Checked Then
+                Dim id As Integer = Convert.ToInt32(hdnId.Value)
+                Response.Redirect("NuevaNota.aspx?id=" & id)
+            End If
+        Next
+    End Sub
+
 End Class
