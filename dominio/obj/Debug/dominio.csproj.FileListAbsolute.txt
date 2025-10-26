@@ -1,0 +1,6 @@
+C:\Users\Leonel\Documents\Programacion\Marquez-891a0d\dominio\bin\Debug\dominio.dll
+C:\Users\Leonel\Documents\Programacion\Marquez-891a0d\dominio\bin\Debug\dominio.pdb
+C:\Users\Leonel\Documents\Programacion\Marquez-891a0d\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\Leonel\Documents\Programacion\Marquez-891a0d\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\Leonel\Documents\Programacion\Marquez-891a0d\dominio\obj\Debug\dominio.dll
+C:\Users\Leonel\Documents\Programacion\Marquez-891a0d\dominio\obj\Debug\dominio.pdb

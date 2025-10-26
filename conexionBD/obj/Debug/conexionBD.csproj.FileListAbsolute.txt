@@ -1,0 +1,9 @@
+C:\Users\Leonel\Documents\Programacion\Marquez-891a0d\conexionBD\bin\Debug\conexionBD.dll
+C:\Users\Leonel\Documents\Programacion\Marquez-891a0d\conexionBD\bin\Debug\conexionBD.pdb
+C:\Users\Leonel\Documents\Programacion\Marquez-891a0d\conexionBD\bin\Debug\dominio.dll
+C:\Users\Leonel\Documents\Programacion\Marquez-891a0d\conexionBD\bin\Debug\dominio.pdb
+C:\Users\Leonel\Documents\Programacion\Marquez-891a0d\conexionBD\obj\Debug\conexionBD.csproj.AssemblyReference.cache
+C:\Users\Leonel\Documents\Programacion\Marquez-891a0d\conexionBD\obj\Debug\conexionBD.csproj.CoreCompileInputs.cache
+C:\Users\Leonel\Documents\Programacion\Marquez-891a0d\conexionBD\obj\Debug\conexionBD.csproj.Up2Date
+C:\Users\Leonel\Documents\Programacion\Marquez-891a0d\conexionBD\obj\Debug\conexionBD.dll
+C:\Users\Leonel\Documents\Programacion\Marquez-891a0d\conexionBD\obj\Debug\conexionBD.pdb
