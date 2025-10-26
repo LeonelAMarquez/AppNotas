@@ -9,36 +9,36 @@ namespace negocio
 {
 	public class UserNegocio
 	{
-		public List<User> listar() 
-		{ 
-			List<User> list = new List<User>();
-			AccesoDatos datos = new AccesoDatos();
+        public User Login(string email, string password)
+        {
+            AccesoDatos datos = new AccesoDatos();
 
-			try
-			{
-				datos.setearConsulta("Select Id, Email, Contrasena From Usuarios");
-				datos.ejecutarLectura();
+            try
+            {
+                datos.setearConsulta("SELECT Id, Email, Contrasena FROM Usuarios WHERE Email = @Email AND Contrasena = @Contrasena");
+                datos.setearParametro("@Email", email);
+                datos.setearParametro("@Contrasena", password);
+                datos.ejecutarLectura();
 
-				while (datos.Lector.Read())
-				{
-					User aux = new User();
-					aux.Id = (int)datos.Lector["Id"];
-					//aux.Email = (string)datos.Lector["Email"];
-					//aux.Contrasena = (string)datos.Lector["Contrasena"];
+                if (datos.Lector.Read())
+                {
+                    User usuario = new User();
+                    usuario.Id = (int)datos.Lector["Id"];
+                    usuario.Email = (string)datos.Lector["Email"];
+                    usuario.Contrasena = (string)datos.Lector["Contrasena"];
+                    return usuario;
+                }
 
-					list.Add(aux);
-				}
-
-				return list;
-			}
-			catch (Exception ex)
-			{
-				throw ex;
-			}
-			finally 
-			{ 
-				datos.cerrarConexion();
-			}
-		}
+                return null; // No encontró coincidencia
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
     }
 }
